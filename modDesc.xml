@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="74">
+    <author>HR Forst und Fahrzeugbau</author>
+	
+    <version>1.0.1.0</version>
+	
+	<title>
+        <en>MAN TGX Transporter</en>
+    </title>
+    
+    <storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="MRFTransport.xml"/>
+    </storeItems>
+	
+	<iconFilename>icon_TGXTransport.dds</iconFilename>
+	
+	<description>
+        <en>
+            <![CDATA[
+The MAN TGX Transporter is used to transport vehicles and Cargo such as Bales, Pallets, etc.
+
+Price: $172,000
+Power: 500 hp
+
+The following configurations are available:
+- Sun visor stickers with Color Change
+- 2 tire manufacturers each with and without labeling
+- Rims completely color choice, deep bed black or chrome and inner part colorable
+- Stone guard
+- Reflective Stripes
+- Beacon Lights
+- Front Flasher
+- Sun Visors
+- Decal
+- Bullbar and Roofbar each with different headlight and position light configurations
+- Wind deflectors
+- Headlight protection
+- Sun Visor Material: Clear or colorchange
+- Honks
+- Engine versions
+- Colorchange for the middle and lower bumper grille
+- Tension belts or automatic holding system (dynamic mount)
+- Additional mirror
+
+Color Changes:
+- Mirror caps
+- Main Color
+- Back
+- Sun visors when sun visor material is set to color change
+- Rims
+
+The width of the ramps can be adjusted
+Side marker lights with flashing function
+Turn signals and marker lights flash when reversing
+Daytime running lights Automatically after engine start
+Own symbol in the help menu for the ramp adjustment
+Press and hold the horn for Babyshark
+Registered high beam as work light because console players do not have high beam
+Sequence: low beam, high beam, rear working lights
+
+Changelog 1.0.0.1:
+- Roofbar light fixt
+- Other Fixes
+- Description edited
+
+Changelog 1.0.1.0:
+- Adjusted Color Changes
+- Added shop options
+- Changes to the 3D model
+- AI corrected
+- It is recommended to buy the vehicle again
+- Automatic holding system Improved
+]]>
+        </en>
+        <de>
+            <![CDATA[
+Der MAN TGX Transporter dient zum Transport von Fahrzeugen und Ladungsgütern, z.b. Ballen, Paletten usw.
+
+Preis: ab 172000€
+Leistung: ab 500 PS
+
+Folgende Konfigurationen stehen zur Auswahl:
+- Sonnenblenden Aufkleber mit Farbwahl
+- 2 Reifen Hersteller jeweils mit und ohne Beschriftung
+- Felgen komplett Farbwahl, Tiefbett Schwarz oder Chrom und Innenteil Färbbar
+- Steinschlagschutzgitter
+- Reflektorstreifen
+- Rundumleuchten
+- Frontblitzer
+- Sonnenblenden
+- Aufkleber
+- Bullbar und Dachbar jeweils mit verschiedenen Scheinwerfern und Positionsleuchten Konfigurationen
+- Windabweiser
+- Scheinwerferschutz
+- Sonnenblendenmaterial: Durchsichtig oder Farbwahl
+- Fanfare
+- Motorausführungen
+- Farbwahl Stossstangen Grill Mitte und Unten
+- Spanngurte oder Automatisches Haltesystem (Dynamicmount)
+- Zusatzspiegel
+
+Farbwahlen:
+- Spiegelkappen
+- Hauptfarbe
+- Aufbau
+- Sonnenblenden, wenn Sonnenblenden Material auf Farbwahl gestellt wurde
+- Felgen
+
+Rampen können in der Breite verstellt werden
+Seitenmarkierungsleuchten mit Blinkfunktion
+Blinker und Markierungsleuchten blinken beim Rückwärtsfahren
+Tagfahrlicht Automatisch nach Motorstart
+Eigenes Symbol im Hilfemenü für die Rampenverstellung
+Hupe gedrückt halten für Babyshark
+Fernlicht als Arbeitslicht eingetragen, da Konsolenspieler kein Fernlicht haben
+Reihenfolge: Abblendlicht, Fernlicht, Arbeitsscheinwerfer hinten
+
+Changelog 1.0.0.1:
+- Dachbar Licht gefixt
+- Andere Sachen noch gefixt
+- Beschreibung angepasst
+
+Changelog 1.0.1.0:
+- Farbwahlen angepasst
+- Shop Optionen hinzugefügt
+- Änderungen am 3D Model
+- AI Korrigiert
+- Neukauf des Fahrzeuges wird Empfohlen
+- Automatisches Haltesystem Verbessert
+]]>
+        </de>
+    </description>
+	
+	<multiplayer supported="true"/>
+	
+	<vehicleTypes>
+		<type name="MRFTRANSPORT" parent="woodTruck" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="dynamicMountAttacher" />
+			<specialization name="cover" />
+			<specialization name="fillVolume" />
+			<specialization name="dischargeable" />
+			<specialization name="trailer" />
+			<specialization name="treeSaplingPallet" />
+			<specialization name="workArea" />
+			<specialization name="workParticles" />
+			<specialization name="variableWorkWidth" />
+			<specialization name="groundReference" />
+			<specialization name="workMode" />
+			<specialization name="roller" />
+		</type>
+	</vehicleTypes>
+	
+	<axisIcons>
+		<icon name="RAMPEN_ICON" filename="textures/Rampen.dds"/>
+	</axisIcons>
+	
+	<l10n>
+		<text name="500">
+			<en>TGX Transporter 500 HP</en>
+			<de>TGX Transporter 500 PS</de>
+		</text>
+		<text name="640">
+			<en>TGX Transporter 640 HP</en>
+			<de>TGX Transporter 640 PS</de>
+		</text>
+		<text name="880">
+			<en>TGX Transporter 880 HP</en>
+			<de>TGX Transporter 880 PS</de>
+		</text>
+		<text name="Aufkleber">
+			<en>Decal</en>
+			<de>Aufkleber</de>
+		</text>
+		<text name="KabineOben">
+			<en>Cabin Above</en>
+			<de>Kabine Oben</de>
+		</text>
+		<text name="KabineUnten">
+			<en>Cabin Below </en>
+			<de>Kabine Unten</de>
+		</text>
+		<text name="SBDecal">
+			<en>Sunshield Decal</en>
+			<de>Sonnenblenden Aufkleber</de>
+		</text>
+		<text name="GrillO">
+			<en>Bumper Grille</en>
+			<de>Stoßstangen Grill</de>
+		</text>
+		<text name="GrillU">
+			<en>Bumper Center Bottom</en>
+			<de>Stoßstange Mitte Unten</de>
+		</text>
+		<text name="Spiegelkappen">
+			<en>Mirrorcaps</en>
+			<de>Spiegelkappen</de>
+		</text>	
+		<text name="Dachbar">
+			<en>Roofbar</en>
+			<de>Dachbar</de>
+		</text>
+		<text name="ohne">
+			<en>Without</en>
+			<de>Ohne</de>
+		</text>
+		<text name="ZSpiegel">
+			<en>Extra Mirrors</en>
+			<de>Zusatzspiegel</de>
+		</text>
+		<text name="SSchutz">
+			<en>Headlight Protection</en>
+			<de>Scheinwerferschutz</de>
+		</text>
+		<text name="Zusatzteile">
+			<en>Extra Parts</en>
+			<de>Zusatzteile</de>
+		</text>
+		<text name="Horns">
+			<en>Horns</en>
+			<de>Fanfare</de>
+		</text>
+		<text name="beides">
+			<en>With All</en>
+			<de>Beides</de>
+		</text>
+		<text name="Sonnenblende2">
+			<en>Sunshield Material</en>
+			<de>Sonnenblenden Material</de>
+		</text>
+		<text name="Sonnenblende">
+			<en>Sunshield</en>
+			<de>Sonnenblende</de>
+		</text>
+		<text name="SBFW">
+			<en>Color Change</en>
+			<de>Farbwahl</de>
+		</text>
+		<text name="Durchsichtig">
+			<en>Plexiglass</en>
+			<de>Plexiglas</de>
+		</text>
+		<text name="RUL">
+			<en>Roof Warning Lights</en>
+			<de>Dach Warnleuchten</de>
+		</text>
+		<text name="Balken">
+			<en>Warning bar</en>
+			<de>Warnbalken</de>
+		</text>
+		<text name="Blende">
+			<en>Windscreen Stone Guard</en>
+			<de>Steinschlagschutzgitter</de>
+		</text>
+		<text name="Flasher">
+			<en>Flash Lights</en>
+			<de>Frontblitzer</de>
+		</text>
+		<text name="BullbarLicht">
+			<en>With Light</en>
+			<de>Mit Licht</de>
+		</text>
+		<text name="Windabweiser">
+			<en>Winddeflector</en>
+			<de>Windabweiser</de>
+		</text>
+		<text name="Streifen">
+			<en>Reflector Strips </en>
+			<de>Reflektorstreifen</de>
+		</text>
+		<text name="action_unfoldRamps">
+			<en>Ramps down</en>
+			<de>Rampen runter</de>
+		</text>
+		<text name="action_foldRamps">
+			<en>Ramps up</en>
+			<de>Rampen hoch</de>
+		</text>
+		<text name="Spanngurte">
+			<en>Tension Belts</en>
+			<de>Spanngurte</de>
+		</text>
+		<text name="Haltesystem">
+			<en>Transport Safety</en>
+			<de>Transportsicherung</de>
+		</text>
+		<text name="function_transport">
+			<en>This vehicle is used to transport vehicles and cargo</en>
+			<de>Dieses Fahrzeug dient zum Transport von Fahrzeugen und Ladungsgütern</de>
+		</text>
+		<text name="chassisColor1"  >		<en>Chassis Color Mat</en>			<de>Fahrgestell Farbe Matt</de>		</text>
+		<text name="chassisColor2"  >		<en>Chassis Color Glossy</en>		<de>Fahrgestell Farbe Glänzend</de>	</text>
+		<text name="Pink"  >				<en>Light Pink</en>					<de>Rosa</de>						</text>
+		<text name="POLISHEDMETAL"  >		<en>Polished Metal</en>				<de>Poliertes Metal</de>			</text>
+		<text name="SPECIALBLUE1" >			<en>Special Blue 1</en>				<de>Spezial Blau 1</de>				</text>
+		<text name="SPECIALYELLOW" >		<en>Special Yellow</en>				<de>Spezial Gelb</de>				</text>
+		<text name="SPECIALBLUE2" >			<en>Special Blue 2</en>				<de>Spezial Blau 2</de>				</text>
+		<text name="SPECIALGREEN" >			<en>Special Green</en>				<de>Spezial Grün</de>				</text>
+		<text name="BLACK" >				<en>Black</en>						<de>Schwarz</de>					</text>
+		<text name="MANRED" >				<en>MAN Red</en>					<de>MAN Rot</de>					</text>
+		<text name="MANOLDGREEN" >			<en>MAN Oldgreen</en>				<de>MAN Altgrün</de>				</text>
+		<text name="BROWN2" >				<en>Dark Brown</en>					<de>Dunkel Braun</de>				</text>
+		<text name="BLUE" >					<en>Blue</en>						<de>Blau</de>						</text>
+		<text name="BLUE1" >				<en>Blue 1</en>						<de>Blau 1</de>						</text>
+		<text name="BLUE2" >				<en>Blue 2</en>						<de>Blau 2</de>						</text>
+		<text name="BLUE3" >				<en>Blue 3</en>						<de>Blau 3</de>						</text>
+		<text name="GREEN1" >				<en>Green 1</en>					<de>Grün 1</de>						</text>
+		<text name="GREEN2" >				<en>Green 2</en>					<de>Grün 2</de>						</text>
+		<text name="GREEN3" >				<en>Green 3</en>					<de>Grün 3</de>						</text>
+		<text name="GREEN4" >				<en>Green 4</en>					<de>Grün 4</de>						</text>
+		<text name="PINK/RED" >				<en>Pink/Red</en>					<de>Pink/Rot</de>					</text>
+		<text name="BERRY" >				<en>Berry</en>						<de>Beere</de>						</text>
+		<text name="WHITE" >				<en>White</en>						<de>Weiß</de>						</text>
+		<text name="DARKGRAY" >				<en>Darkgray</en>					<de>Dunkelgrau</de>					</text>
+		<text name="YELLOW1" >				<en>Yellow 1</en>					<de>Gelb 1</de>						</text>
+		<text name="YELLOW2" >				<en>Yellow 2</en>					<de>Gelb 2</de>						</text>
+		<text name="YELLOW3" >				<en>Yellow 3</en>					<de>Gelb 3</de>						</text>
+		<text name="SPECIALBLUE1METAL" >	<en>Special Blue 1 Metal</en>		<de>Spezial Blau 1 Metal</de>		</text>
+		<text name="SPECIALYELLOWMETAL" >	<en>Special Yellow Metal</en>		<de>Spezial Gelb Metal</de>			</text>
+		<text name="SPECIALBLUE2METAL" >	<en>Special Blue 2 Metal</en>		<de>Spezial Blau 2 Metal</de>		</text>
+		<text name="SPECIALGREENMETAL" >	<en>Special Green Metal</en>		<de>Spezial Grün Metal</de>			</text>
+		<text name="BLACKMETAL" >			<en>Black Metal</en>				<de>Schwarz Metal</de>				</text>
+		<text name="MANREDMETAL" >			<en>MAN Red Metal</en>				<de>MAN Rot Metal</de>				</text>
+		<text name="MANOLDGREENMETAL" >		<en>MAN Oldgreen Metal</en>			<de>MAN Altgrün Metal</de>			</text>
+		<text name="BROWNMETAL" >			<en>Brown Metal</en>				<de>Braun Metal</de>				</text>
+		<text name="BLUEMETAL" >			<en>Blue Metal</en>					<de>Blau Metal</de>					</text>
+		<text name="BLUE1METAL" >			<en>Blue 1 Metal</en>				<de>Blau 1 Metal</de>				</text>
+		<text name="BLUE2METAL" >			<en>Blue 2 Metal</en>				<de>Blau 2 Metal</de>				</text>
+		<text name="BLUE3METAL" >			<en>Blue 3 Metal</en>				<de>Blau 3 Metal</de>				</text>
+		<text name="GREEN1METAL" >			<en>Green 1 Metal</en>				<de>Grün 1 Metal</de>				</text>
+		<text name="GREEN2METAL" >			<en>Green 2 Metal</en>				<de>Grün 2 Metal</de>				</text>
+		<text name="GREEN3METAL" >			<en>Green 3 Metal</en>				<de>Grün 3 Metal</de>				</text>
+		<text name="GREEN4METAL" >			<en>Green 4 Metal</en>				<de>Grün 4 Metal</de>				</text>
+		<text name="PINK/REDMETAL" >		<en>Pink/Red Metal</en>				<de>Pink/Rot Metal</de>				</text>
+		<text name="BERRYMETAL" >			<en>Berry Metal</en>				<de>Beere Metal</de>				</text>
+		<text name="WHITEMETAL" >			<en>White Metal</en>				<de>Weiß Metal</de>					</text>
+		<text name="DARKGRAYMETAL" >		<en>Darkgray Metal</en>				<de>Dunkelgrau Metal</de>			</text>
+		<text name="YELLOW1METAL" >			<en>Yellow 1 Metal</en>				<de>Gelb 1 Metal</de>				</text>
+		<text name="YELLOW2METAL" >			<en>Yellow 2 Metal</en>				<de>Gelb 2 Metal</de>				</text>
+		<text name="YELLOW3METAL" >			<en>Yellow 3 Metal</en>				<de>Gelb 3 Metal</de>				</text>
+    </l10n>
+</modDesc>
